@@ -1,0 +1,29 @@
+{
+  "name": "alitvinenko/mongodb-nested-tree-extension",
+  "type": "library",
+  "description": "MongoDB Nested set Strategy and Repository class for DoctrineExtensions",
+  "keywords": [
+    "doctrine2",
+    "tree",
+    "nestedset",
+    "mongodb"
+  ],
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Litvinenko Andrey",
+      "email": "andreylit@gmail.com"
+    }
+  ],
+  "support": {
+    "email": "andreylit@gmail.com"
+  },
+  "require": {
+    "php": ">=5.3.2",
+    "doctrine/mongodb-odm": "^1.1",
+    "gedmo/doctrine-extensions": "^2.3.1"
+  },
+  "autoload": {
+    "psr-0": { "NestedTreeExtension\\": "lib/" }
+  }
+}
