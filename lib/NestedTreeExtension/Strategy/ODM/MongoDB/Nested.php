@@ -10,7 +10,7 @@ use Gedmo\Tool\Wrapper\AbstractWrapper;
 use Gedmo\Tree\Strategy;
 use Gedmo\Mapping\Event\AdapterInterface;
 use Doctrine\ODM\MongoDB\Mapping\ClassMetadata;
-use NestedTreeExtension\Listener\TreeListener;
+use Gedmo\Tree\TreeListener;
 
 /**
  * This strategy makes the tree act like a nested set.
