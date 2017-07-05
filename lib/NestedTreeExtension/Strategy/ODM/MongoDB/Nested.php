@@ -11,6 +11,7 @@ use Gedmo\Tree\Strategy;
 use Gedmo\Mapping\Event\AdapterInterface;
 use Doctrine\ODM\MongoDB\Mapping\ClassMetadata;
 use Gedmo\Tree\TreeListener;
+use NestedTreeExtension\Listener\TreeListener as MongoDBNestedTreeListener;
 
 /**
  * This strategy makes the tree act like a nested set.
@@ -46,7 +47,7 @@ class Nested implements Strategy
     /**
      * TreeListener
      *
-     * @var TreeListener
+     * @var MongoDBNestedTreeListener
      */
     protected $listener = null;
 
