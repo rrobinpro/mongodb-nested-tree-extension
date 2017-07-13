@@ -320,7 +320,7 @@ class NestedTreeRepository extends AbstractTreeRepository
         return $this->childrenQueryBuilder(
             $node,
             $direct,
-            isset($config['root']) ? array($config['root'], $config['left']) : $config['left'],
+            isset($config['root']) ? array($config['root'] => 1, $config['left'] => 1) : $config['left'],
             'ASC',
             $includeNode
         );
