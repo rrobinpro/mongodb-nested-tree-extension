@@ -559,7 +559,7 @@ class Nested implements Strategy
 
         $right = $dm
             ->getDocumentCollection($config['useObjectClass'])
-            ->aggregate([$pipeline])
+            ->aggregate([$pipeline], [ "cursor" => [ "batchSize" => 4 ] ])
             ->getSingleResult()['right']
         ;
 
